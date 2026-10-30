@@ -58,6 +58,16 @@ The supported interpretation is narrow: **the client observed citation-marker st
 
 The sanitized HAR remains private vendor-support evidence. It is not included here, nor are request bodies, conversation identifiers, or unrelated console errors. Capture existence does not itself establish any internal mechanism.
 
+### Later verification of the fresh-run facts
+
+On 30 October 2026, I checked the policy claims in the three fresh 29 October local-date 0/0 reports against the central banks' official sites:
+
+- The [28 October FOMC statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm), released at 2:00 p.m. EDT, preceded the instrumented submission at approximately 21:07:32 UTC and matched the reported decision to maintain 3.75%–4.00%. The numerical range was already in force; the fresh fact was the October 28 decision to maintain it.
+- The Bank of Canada [newly raised the overnight-rate target by 25 basis points to 2.50%](https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/). Its [public release time was 09:45 Eastern Time on October 28](https://www.bankofcanada.ca/2026/10/fad-announcement-release-mpr-2026-10-28/), before the instrumented run.
+- The [10 September ECB decision](https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html) raised the main refinancing operations rate to 2.65%, effective September 16. It remained the latest published ECB policy decision at submission, before the [29 October decision](https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html).
+
+These checked policy claims show accurate very recent information in generated 0/0 output, including a same-day Bank of Canada policy change. This is later verification, not execution evidence: it does not establish how the information reached the model, whether a particular search/retrieval tool ran, why counters were zero, or where citation/content-reference information was lost.
+
 ## A separate scope-completion finding
 
 I also compared complete preserved requests and outputs for two larger runs. In **6c**, three programmes were requested; the output materially addressed Politecnico di Milano while Paris-Saclay and KTH coverage was absent. In **6d**, four Aalto programmes were requested; the output materially addressed Computer Science without the separately required programme-specific research for the other three.
