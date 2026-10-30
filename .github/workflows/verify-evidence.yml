@@ -1,0 +1,52 @@
+name: Verify public evidence
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify public hashes
+        run: sha256sum --check --strict SHA256SUMS
+      - name: Check exact manifest coverage
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+
+          root = Path.cwd()
+          raw = Path('SHA256SUMS').read_bytes()
+          if b'\r' in raw or not raw.endswith(b'\n'):
+              raise SystemExit('Manifest must use LF and end with a newline')
+          paths = []
+          for line in raw.decode('utf-8').splitlines():
+              match = re.fullmatch(r'[0-9a-f]{64}  ((?:data|evidence)/[^\\]+)', line)
+              if not match:
+                  raise SystemExit('Invalid manifest entry')
+              name = match.group(1)
+              path = Path(name)
+              if path.as_posix() != name or '..' in path.parts:
+                  raise SystemExit('Noncanonical manifest path')
+              if not path.resolve().is_relative_to(root):
+                  raise SystemExit('Manifest path escapes repository')
+              paths.append(name)
+          if len(paths) != len(set(paths)):
+              raise SystemExit('Duplicate manifest path')
+          expected = set()
+          for folder in ('data', 'evidence'):
+              for path in Path(folder).rglob('*'):
+                  if path.is_symlink():
+                      raise SystemExit('Evidence symlinks are not allowed')
+                  if path.is_file():
+                      expected.add(path.as_posix())
+          if set(paths) != expected or not expected:
+              raise SystemExit('Manifest must cover exactly data/ and evidence/')
+          print(f'Exact coverage: {len(paths)} public files; no duplicates')
+          PY
