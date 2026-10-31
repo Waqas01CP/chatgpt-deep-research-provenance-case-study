@@ -12,7 +12,7 @@ The request reduces a large private research task to three named official source
 
 ## Expected contract
 
-Under my requested contract, the system should provide a source-supported comparison with usable inline citations, or explicitly disclose inability to obtain the requested evidence. This describes the requested behavior, not a verified internal completion specification. Name the actual policy-rate instrument: a target range and the ECB's several rates are not interchangeable. Do not hardcode the historical output as the expected current answer.
+Under my requested contract, the system should provide a source-supported comparison with usable inline citations, or explicitly disclose inability to obtain the requested evidence. This describes the requested behavior, not a verified internal completion specification. A correct comparison has to name the actual instrument: the Federal Reserve sets a target range, and the ECB's key rates are not interchangeable. Rates change over time, so the historical outputs are not an answer key.
 
 ## Recording protocol
 

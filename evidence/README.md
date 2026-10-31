@@ -1,6 +1,6 @@
 # Public evidence index and provenance
 
-This is a deliberately small set of public derivatives. Originals remain privately preserved. Images contain platform UI and generated report content; new labels, contact-sheet framing, and derived summaries were prepared by the investigator with tool assistance. None is an independent product execution by a reviewer.
+This is a deliberately small set of public derivatives. Originals remain privately preserved. Images contain platform UI and generated report content; new labels, contact-sheet framing, and derived summaries were prepared by the investigator with tool assistance. None of the published files comes from an independent reproduction by a third party.
 
 ## Derivative rules
 
@@ -64,7 +64,7 @@ The fresh instrumented run's approximate submission was 2026-10-29 02:07:32 Asia
 | Field | Meaning |
 |---|---|
 | `run_alias` | Public investigator-assigned alias; not a private conversation identifier. |
-| `phase` | Historical baseline, Batch 6, canary, cross-surface contrast, or Phase 2. |
+| `phase` | `V1_*`: runs in the original record closed on 28 October 2026, including baseline, Batch 6, canary, and cross-surface records; `Phase2`: fresh runs captured afterwards. |
 | `attributed_account_plan` | Anonymized account alias and operator-attributed plan. A/B were investigator-controlled; C was separately attributed on iOS; D was another operator. |
 | `client` | Captured or reported client/surface; not a backend route. |
 | `reported_date` | ISO reported execution date, or `unknown`. |

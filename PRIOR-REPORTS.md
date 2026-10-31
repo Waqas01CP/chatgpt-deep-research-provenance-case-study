@@ -20,6 +20,6 @@ An [OpenAI Support reply dated 17 October](https://community.openai.com/t/accoun
 
 ## What this investigation adds
 
-Similar completed-0/0 behavior was reported publicly before this investigation. This case contributes a preserved, privacy-limited record of one investigation: a historical telemetry baseline, a six-run failure cluster, reduction to a small central-bank task, qualified reproductions across attributed accounts and clients, and fresh Plus/Free observations. It also records a client rendering warning during a privately HAR-captured reproduction, a separate scope-completion finding, and lessons from reducing an overbuilt checker to explicit, bounded checks. These are case-specific contributions, not claims of first discovery or a newly identified internal mechanism.
+Similar completed-0/0 behavior was reported publicly before this investigation. This case preserves a historical telemetry baseline, a six-run failure cluster, reduction to a small central-bank task, qualified reproductions across accounts and clients, fresh Plus/Free observations, and an instrumented client warning. It adds a later official-source check of the fresh output, a separate scope-completion finding, and lessons from simplifying the supporting checker. These are case-specific contributions, not claims of first discovery or a newly identified internal mechanism.
 
-The [main case study](README.md) distinguishes the investigator's own support status from these public statements. No private support correspondence is redistributed here.
+The [main case study](README.md) distinguishes my own support status from these public statements. No private support correspondence is redistributed here.
