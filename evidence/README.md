@@ -45,7 +45,7 @@ Both contact sheets support visible telemetry, not internal retrieval counts, ve
 
 | Public artifact | Private source category and transformation | Supported claim and limits / origin |
 |---|---|---|
-| [scope-comparison.md](historical/scope-comparison.md) | Complete 6c/6d preserved requests and exports; manual derived coverage comparison, with personal details and full bodies withheld. | Investigator-authored summary of missing requested programme scope. All source lines needed to verify absence are not public; valid shared Aalto sections are respected. |
+| [scope-comparison.md](historical/scope-comparison.md) | Complete 6c/6d preserved requests and exports; manual derived coverage comparison, with programme and institution identifiers anonymised and personal details and full bodies withheld. | Investigator-authored summary of missing requested programme scope. All source lines needed to verify absence are not public; valid shared sections in 6d are respected. |
 | [plus-a-result.png](canary/plus-a-result.png) | Historical Plus-A result, crop `(20,59,1005,455)`. | Platform completion 3m/0/0 with generated source-specific opening. Full submitted request is not captured here; plan/account attribution is partly operator-reported. |
 | [free-b-prompt.png](canary/free-b-prompt.png) | Historical Free-B plan/request capture, crop `(310,39,852,218)`. | Investigator-submitted request inside platform UI. Unlike a shared template, this visibly preserves the submitted wording. Planner/start controls are omitted. |
 | [free-b-result.png](canary/free-b-result.png) | Historical Free-B result, crop `(22,43,920,354)`. | Platform completion 4m/0/0 and generated report opening, paired by the investigator with the B request/export. |

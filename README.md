@@ -72,9 +72,9 @@ The instrumented 0/0 run therefore contained accurate information that had been 
 
 ## A separate scope-completion finding
 
-I also compared complete preserved requests and outputs for two larger runs. In **6c**, three programmes were requested; the output materially addressed Politecnico di Milano while Paris-Saclay and KTH coverage was absent. In **6d**, four Aalto programmes were requested; the output materially addressed Computer Science without the separately required programme-specific research for the other three.
+I also compared complete preserved requests and outputs for two larger runs. In **6c**, Programmes A–C were requested; the output materially addressed Programme A while coverage of Programmes B and C was absent. In **6d**, Programmes A–D were requested; the output materially addressed Programme A without the separately required programme-specific research for Programmes B–D. These anonymised labels are scoped to each run.
 
-The Aalto request permitted shared D/E/F material. I do not count valid shared sections as omissions. Both outputs appeared completed without a clear declaration that the remaining programme scope had not been reached. This differs from baseline reports that openly disclosed partial work.
+The 6d request permitted shared assessment sections D/E/F. I do not count valid shared sections as omissions. Both outputs appeared completed without a clear declaration that the remaining programme scope had not been reached. This differs from baseline reports that openly disclosed partial work.
 
 The [scope comparison](evidence/historical/scope-comparison.md) is a compact derived inspection record. Private briefs and complete report bodies are withheld, so it does not expose every source line needed to independently verify every absence. This secondary finding does not establish the same cause as the 0/0 symptom.
 
