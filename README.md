@@ -1,5 +1,7 @@
 # ChatGPT Deep Research: Completed Runs with Zero Displayed Searches and Citations
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24515744.svg)](https://doi.org/10.5281/zenodo.24515744)
+
 **In the runs documented here, ChatGPT Deep Research displayed “Research completed” with 0 searches and 0 citations while producing substantive, source-specific output. These observations do not establish whether retrieval occurred or identify an internal root cause.**
 
 I investigated this from outside the product after Deep Research tasks on my account, which had previously been showing hundreds of searches and dozens of citations, began finishing with zero displayed searches and citations. I reduced the issue to a short three-central-bank prompt that explicitly told Deep Research to report failure if it retrieved no web sources. It reproduced the same completed-0/0 state across Plus and Free accounts, on desktop web and iOS, and again several days later. The reports neither displayed the requested citations nor reported failure. During one instrumented run, the ChatGPT client logged that the report contained citation markers but no content references. OpenAI Support later requested and received the sanitized network capture from that run; no technical explanation had been provided when this case study was published.
